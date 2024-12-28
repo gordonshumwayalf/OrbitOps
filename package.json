@@ -1,0 +1,77 @@
+{
+  "name": "react-top-loading-bar",
+  "version": "3.0.2",
+  "description": "A very simple, highly customisable react top loader component.",
+  "author": {
+    "name": "Klendi Goci",
+    "email": "klendigocci@gmail.com",
+    "url": "https://github.com/klendi"
+  },
+  "license": "MIT",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "source": "src/index.tsx",
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build",
+    "test:build": "npm run build",
+    "predeploy": "cd example && npm install && npm run build",
+    "deploy": "gh-pages -d example/dist"
+  },
+  "peerDependencies": {
+    "react": "^16 || ^17 || ^18 || ^19"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.2",
+    "gh-pages": "^6.2.0",
+    "prettier": "^3.4.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react component",
+    "react-loading",
+    "react-loader",
+    "animated loader",
+    "react youtube like loader",
+    "react",
+    "animated react loader",
+    "react-animated-loader",
+    "react-top-loader",
+    "react",
+    "reactjs",
+    "react-component",
+    "loading-bar",
+    "youtube-loading-bar",
+    "loading",
+    "react-loading-bar",
+    "redux-loading-bar",
+    "loading bar",
+    "smooth",
+    "animated",
+    "youtube loading bar",
+    "top loading bar",
+    "component"
+  ],
+  "homepage": "https://klendi.github.io/react-top-loading-bar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klendi/react-top-loading-bar.git"
+  }
+}
